@@ -16,14 +16,18 @@ body{
 }
 /* Hero section design  */
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+     padding: 0 7% ;
 }
 .heading-title{
     padding-left: 5%;
 }
+.heading-image{
+    padding-left: 100px;
+} 
 .heading-title h1{
     font-size: 3em;
     font-weight: 700;
@@ -33,27 +37,18 @@ body{
     font-weight: 500;
     padding-bottom: 20px;
 }
-.heading-title a{
+.heading-title .btn{
     text-decoration: none;
     padding: 10px 15px;
     background: #111;
     color: #fff;
     border-radius: 30px;
-    
 }
 
 .fa-arrow-right{
     align-items: center;
 }
-.bottom-btn{
-    text-align:right;
-    padding-top: 10px;
-    padding-right: 45px;
-}
-.bottom-btn a{
-    color: #111;
-    text-decoration: none;
-}
+
 
 
 /* Hero section styling end here  */
@@ -71,8 +66,6 @@ body{
     margin: 0 50px;
     padding: 10px;
     box-shadow: 1px 1px  4px lightgray;
- 
-
 }
 .flex-img{
     display: flex;
@@ -103,25 +96,21 @@ body{
     font-size: 14px;
     font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bottom-btn{
+    text-align:right;
+    padding-top: 10px;
+    padding-right: 45px;
+}
+.bottom-btn a{
+    color: #111;
+    text-decoration: none;
+}
 
 
 
 /* Contact section styling  */
 .contact-section{
-    padding-top: 140px;
+    padding-top: 10px;
     padding-bottom: 140px;
 }
 .contact-section .contact-title{
@@ -164,8 +153,15 @@ textarea.input-text{
     cursor: pointer;
     font-weight: 700;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: transform .5s;
 }
+.input-text-btn:hover{
+    background: #03203C;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(8px);
+}
+
 
 /* Footer section styling start here  */
 footer{
@@ -185,3 +181,41 @@ footer .fab{
     border-radius: 50px;
 }
 /* Footer section styling ends here  */
+
+/* Media Query Responsive layout  */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    .heading-title h1{
+        font-size: 2em;
+    }
+    .container img{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .grid-box-heading{
+        font-size: 2em;
+    }
+    .grid-parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-title{
+        font-size: 2em;
+    }
+
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
