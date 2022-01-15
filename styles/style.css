@@ -1,0 +1,110 @@
+ /* Google fonts links  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Entire website style  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Navbar style  */
+
+/* Hero section design  */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+}
+.heading-title{
+    padding-left: 5%;
+}
+.heading-title h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+.heading-title p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.heading-title a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+}
+/* Hero section styling end here  */
+.grid-box-heading{
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Contact section styling  */
+.contact-section{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.contact-section h1{
+    text-align: center;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-section .input-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 1px solid #111;
+    background: #fff;
+    padding: 20px 40px;
+    outline: none;
+    color: #111;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.input-text:focus{
+    box-shadow: 0 0 10px 1px #34495e;
+}
+textarea.input-text{
+    resize: none;
+    height: 130px;
+}
+.input-text-btn{
+    float: left;
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 12px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Footer section styling start here  */
+footer{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #111;
+    color: #fff;
+}
+.footer p{
+    font-size: 14px;
+}
+footer .fab{
+    padding: 5px;
+    color: #111;
+    background: #fff;
+    border-radius: 50px;
+}
+/* Footer section styling ends here  */
