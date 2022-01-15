@@ -10,7 +10,10 @@ body{
 }
 
 /* Navbar style  */
-
+.logo h2{
+    text-align: center;
+    font-size: 2.5em;
+}
 /* Hero section design  */
 .container{
     display: flex;
@@ -35,22 +38,96 @@ body{
     padding: 10px 15px;
     background: #111;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
+    
 }
+
+.fa-arrow-right{
+    align-items: center;
+}
+.bottom-btn{
+    text-align:right;
+    padding-top: 10px;
+    padding-right: 45px;
+}
+.bottom-btn a{
+    color: #111;
+    text-decoration: none;
+}
+
+
 /* Hero section styling end here  */
 .grid-box-heading{
     font-size: 2.5em;
     text-align: center;
     padding-bottom: 20px;
 }
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.child{
+    margin: 0 50px;
+    padding: 10px;
+    box-shadow: 1px 1px  4px lightgray;
+ 
+
+}
+.flex-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child img{
+    width: 300px;
+    height: 256px;
+   
+}
+.child h3{
+    font-size: 24px;
+}
+.child h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+.child .fa-star{
+    margin-top: 0;
+    color: orange;
+}
+.child .fa-star.empty{
+    color: gray;
+}
+.child p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact section styling  */
 .contact-section{
     padding-top: 140px;
     padding-bottom: 140px;
 }
-.contact-section h1{
+.contact-section .contact-title{
     text-align: center;
+    font-size: 3em;
+    font-weight: 700;
 }
 .contact-form{
     max-width: 600px;
